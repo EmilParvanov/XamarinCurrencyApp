@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CurrencyConverter.MainPage" BackgroundImage="converter.jpg">
+
+    <ContentPage.Content>
+        <!--open main stacklayout tag -->
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center" >
+            
+            <StackLayout Padding="5" Spacing="50" Orientation="Horizontal">
+                
+                <Button Text="EURO To USD" TextColor="AntiqueWhite" BorderWidth="1" BorderRadius="20" BorderColor="Aqua" 
+                        BackgroundColor="Transparent" VerticalOptions="CenterAndExpand" Clicked="Button_Clicked"/>
+                <Button Text="USD to EURO" TextColor="AntiqueWhite" BorderWidth="1" BorderRadius="20" BorderColor="Aqua" BackgroundColor="Transparent" 
+                        HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Clicked="Button_Clicked_1"/>
+            </StackLayout>
+            <StackLayout Spacing="14" Orientation="Horizontal">
+                <Button Text="EURO to POUNDS" Margin="7" TextColor="AntiqueWhite" BorderWidth="1" BorderRadius="20" BorderColor="Aqua" BackgroundColor="Transparent"
+                        HorizontalOptions="Start" VerticalOptions="CenterAndExpand" Clicked="Button_Clicked_2"/>
+                <Button Text="POUNDS to EURO" TextColor="AntiqueWhite" BorderWidth="1" BorderRadius="20" BorderColor="Aqua" BackgroundColor="Transparent" 
+                        HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Clicked="Button_Clicked_3"/>
+            </StackLayout>
+
+            <Button Text="More Currency" Margin="2"  TextColor="AntiqueWhite" BorderWidth="1" BorderRadius="20" BorderColor="Aqua" BackgroundColor="Transparent"
+                   Clicked="Button_Clicked_4"/>
+            
+        </StackLayout>
+        <!--closing main  stacklayout tag -->
+    </ContentPage.Content>
+
+</ContentPage>
